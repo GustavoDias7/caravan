@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Caravan - Contato</title>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-md navbar-light bg-light fixed-top py-3 shadow-sm"
+    >
+      <a class="navbar-brand" href="/caravan">
+        <img src="../img/caravan.svg" alt="Caravan" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Locais
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="local.html">California</a>
+              <a class="dropdown-item" href="local.html">Paris</a>
+              <a class="dropdown-item" href="local.html">Dublin</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="planos.html">Planos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contato.html">Contato</a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="#"
+              data-toggle="modal"
+              data-target="#modalLogin"
+              >Login</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="btn btn-outline-primary ml-md-1 mt-sm-2 mt-md-0"
+              href="inscrevase.html"
+              >Inscreva-se</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section>
+      <div class="container">
+        <div class="my-5 text-center">
+          <span class="h6 d-block">POSSUI ALGUMA DÚVIDA?</span>
+          <h2 class="display-4 text-primary">Fale Conosco</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg mb-4">
+            <div class="bg-light rounded p-4 shadow-sm">
+              <form>
+                <div class="form-group">
+                  <label for="name">Nome</label>
+                  <input type="text" class="form-control" id="name" />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control" id="email" />
+                </div>
+                <div class="form-group">
+                  <label for="message">Mensagem</label>
+                  <textarea
+                    type="message"
+                    class="form-control"
+                    id="message"
+                    rows="4"
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                  Enviar Mensagem
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="col-lg mb-4">
+            <h2 class="h6">NOSSO ENDEREÇO</h2>
+            <a href="#">
+              <img
+                src="../img/mapa.png"
+                alt="Endereço da empresa"
+                class="img-fluid box-shadow rounded mb-4"
+              />
+            </a>
+            <div>
+              <h2 class="h6">DADOS DE CONTATO</h2>
+              <ul class="list-unstyled text-secondary">
+                <li>caravan@caravan.com.br</li>
+                <li>(21) 90000-0000</li>
+                <li>De seg à sex das 8h às 18h</li>
+              </ul>
+            </div>
+            <div>
+              <h2 class="h6">REDES SOCIAIS</h2>
+              <ul class="list-unstyled" style="max-width: 260px">
+                <li>
+                  <a
+                    href="#"
+                    target="_blank"
+                    class="btn btn-outline-secondary btn-sm btn-block mb-2"
+                    rel="noopener noreferrer"
+                    >Facebook</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    target="_blank"
+                    class="btn btn-outline-secondary btn-sm btn-block mb-2"
+                    rel="noopener noreferrer"
+                    >Instagram</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    target="_blank"
+                    class="btn btn-outline-secondary btn-sm btn-block mb-2"
+                    rel="noopener noreferrer"
+                    >LinkedIn</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="text-center my-5">
+          <span class="h6 d-block">AINDA ESTÁ COM DÚVIDAS?</span>
+          <h2 class="display-4 text-primary">Perguntas Frequentes</h2>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="accordion col-md-6" id="accordionExample">
+            <div>
+              <div id="headingOne" class="py-2">
+                <a
+                  href="#pergunta1"
+                  class="lead d-block"
+                  data-toggle="collapse"
+                  data-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  → É possível cancelar a viagem?
+                </a>
+              </div>
+
+              <div
+                id="collapseOne"
+                class="collapse"
+                aria-labelledby="headingOne"
+                data-parent="#accordionExample"
+              >
+                <div>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                  pretium lorem non vestibulum scelerisque. Proin a vestibulum
+                  sem, eget tristique massa. Aliquam lacinia rhoncus nibh quis
+                  ornare.
+                </div>
+              </div>
+            </div>
+            <div class="dropdown-divider"></div>
+
+            <div>
+              <div id="headingTwo" class="py-2">
+                <a
+                  href="#pergunta2"
+                  class="lead d-block collapsed"
+                  data-toggle="collapse"
+                  data-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  → Qual a garantia que tenho se perder o voo?
+                </a>
+              </div>
+              <div
+                id="collapseTwo"
+                class="collapse"
+                aria-labelledby="headingTwo"
+                data-parent="#accordionExample"
+              >
+                <div>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                  pretium lorem non vestibulum scelerisque. Proin a vestibulum
+                  sem, eget tristique massa. Aliquam lacinia rhoncus nibh quis
+                  ornare.
+                </div>
+              </div>
+            </div>
+            <div class="dropdown-divider"></div>
+
+            <div>
+              <div id="headingThree" class="py-2">
+                <a
+                  href="#pergunta3"
+                  class="lead d-block collapsed"
+                  data-toggle="collapse"
+                  data-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  → Qual a principal forma de viagem?
+                </a>
+              </div>
+              <div
+                id="collapseThree"
+                class="collapse"
+                aria-labelledby="headingThree"
+                data-parent="#accordionExample"
+              >
+                <div>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                  pretium lorem non vestibulum scelerisque. Proin a vestibulum
+                  sem, eget tristique massa. Aliquam lacinia rhoncus nibh quis
+                  ornare.
+                </div>
+              </div>
+            </div>
+            <div class="dropdown-divider"></div>
+
+            <div>
+              <div id="headingFour" class="py-2">
+                <a
+                  href="#pergunta4"
+                  class="lead d-block collapsed"
+                  data-toggle="collapse"
+                  data-target="#collapseFour"
+                  aria-expanded="false"
+                  aria-controls="collapseFour"
+                >
+                  → Qual o melhor destino de viagem?
+                </a>
+              </div>
+              <div
+                id="collapseFour"
+                class="collapse"
+                aria-labelledby="headingFour"
+                data-parent="#accordionExample"
+              >
+                <div>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                  pretium lorem non vestibulum scelerisque. Proin a vestibulum
+                  sem, eget tristique massa. Aliquam lacinia rhoncus nibh quis
+                  ornare.
+                </div>
+              </div>
+            </div>
+            <div class="dropdown-divider"></div>
+
+            <div>
+              <div id="headingFive" class="py-2">
+                <a
+                  href="#pergunta5"
+                  class="lead d-block collapsed"
+                  data-toggle="collapse"
+                  data-target="#collapseFive"
+                  aria-expanded="false"
+                  aria-controls="collapseFive"
+                >
+                  → Vocês dão descontos para grupos grandes?
+                </a>
+              </div>
+              <div
+                id="collapseFive"
+                class="collapse"
+                aria-labelledby="headingFive"
+                data-parent="#accordionExample"
+              >
+                <div>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                  pretium lorem non vestibulum scelerisque. Proin a vestibulum
+                  sem, eget tristique massa. Aliquam lacinia rhoncus nibh quis
+                  ornare.
+                </div>
+              </div>
+            </div>
+            <div class="dropdown-divider"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="text-white mt-5">
+      <div class="bg-dark">
+        <div class="container py-4">
+          <div class="row">
+            <div class="col-md-3 col-6">
+              <h4 class="h6">Páginas</h4>
+              <ul class="list-unstyled">
+                <li><a href="planos.html">Planos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="inscricao.html">Inscreva-se</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3 col-6">
+              <h4 class="h6">Locais</h4>
+              <ul class="list-unstyled">
+                <li><a href="local.html">California</a></li>
+                <li><a href="local.html">Paris</a></li>
+                <li><a href="local.html">Dublin</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h4 class="h6">Dados de contato</h4>
+              <ul class="list-unstyled text-secondary">
+                <li>caravan@caravan.com.br</li>
+                <li>(21) 90000-0000</li>
+                <li>De seg à sex das 8h às 18h</li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h4 class="h6">Redes sociais</h4>
+              <ul class="list-unstyled">
+                <li>
+                  <a
+                    href="#"
+                    target="_blank"
+                    class="btn btn-outline-secondary btn-sm btn-block mb-2"
+                    style="max-width: 140px"
+                    rel="noopener noreferrer"
+                    >Facebook</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    target="_blank"
+                    class="btn btn-outline-secondary btn-sm btn-block mb-2"
+                    style="max-width: 140px"
+                    rel="noopener noreferrer"
+                    >Instagram</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    target="_blank"
+                    class="btn btn-outline-secondary btn-sm btn-block mb-2"
+                    style="max-width: 140px"
+                    rel="noopener noreferrer"
+                    >LinkedIn</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="div bg-primary">
+        <div class="container text-center py-3">
+          <p class="mb-0">Alguns direitos reservados</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="modalLogin"
+      tabindex="-1"
+      aria-labelledby="modalLoginLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalLoginLabel">Entre na sua conta</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                />
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                />
+              </div>
+              <button type="submit" class="btn btn-primary">Entrar</button>
+              <small id="emailHelp" class="form-text text-muted mt-2"
+                >Esqueceu sua senha? <a href="#">Clique aqui.</a></small
+              >
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      type="text/javascript"
+      src="../js/jquery-3.2.1.slim.min.js"
+    ></script>
+    <script type="text/javascript" src="../js/popper.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.js"></script>
+    <script type="text/javascript" src="../js/app.js"></script>
+  </body>
+</html>
