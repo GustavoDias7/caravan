@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/bootstrap.css" />
     <link rel="stylesheet" href="../css/style.css" />
-    <title>Caravan - Planos</title>
+    <title>Caravan - Inscrição</title>
   </head>
   <body>
     <nav
@@ -76,49 +76,209 @@
     <section>
       <div class="container">
         <div class="my-5 text-center">
-          <span class="h6 d-block">SEU PLANO, SUA VIAGEM</span>
-          <h2 class="display-4 text-primary">Escolha o Plano</h2>
+          <span class="h6 d-block">PROGRAME A VIAGEM DO SEU SONHO</span>
+          <h2 class="display-4 text-primary">INSCREVA-SE</h2>
         </div>
         <div class="row">
-          <div class="col-md mb-4">
-            <div class="bg-light rounded p-4 shadow-sm">
-              <h2>Cold</h2>
-              <ul class="lista-plano list-unstyled">
-                <li>→ 30 dias de viagem</li>
-                <li>→ 3 destinos diferentes</li>
-                <li>→ Tudo pago pela empresa</li>
-                <li>→ Ingressos para festas</li>
-              </ul>
-              <form action="">
-                <div class="form-group">
-                  <select class="form-control bg-light" id="inputCidades">
-                    <option>Selecione a cidade</option>
-                    <option>California</option>
-                    <option>Paris</option>
-                    <option>Dublin</option>
+          <div class="col-lg-6">
+            <form>
+              <div class="form-row">
+                <div class="form-group col-sm-6">
+                  <label for="name">Nome</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="Nome completo"
+                  />
+                </div>
+                <div class="form-group col-sm-6">
+                  <label for="cpf">CPF</label>
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="cpf"
+                    placeholder="xxx.xxx.xxx-xx"
+                  />
+                </div>
+                <div class="form-group col-sm-6">
+                  <label for="name">E-mail</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Seu e-mail"
+                  />
+                </div>
+                <div class="form-group col-sm-6">
+                  <label for="password">Senha</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="password"
+                    placeholder="Senha de acesso"
+                  />
+                </div>
+                <div class="form-group col-12">
+                  <label for="address">Endereço</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="address"
+                    placeholder="Número, nome da rua e bairro."
+                  />
+                </div>
+                <div class="form-group col-sm-6">
+                  <label for="city">Cidade</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="city"
+                    placeholder="Sua cidade"
+                  />
+                </div>
+                <div class="form-group col-sm-3">
+                  <label for="state">Estado</label>
+                  <select id="state" class="form-control">
+                    <option selected>Selecione</option>
+                    <option>Rio de Janeiro</option>
+                    <option>São Paulo</option>
+                    <option>Paraná</option>
+                    <option>Ceará</option>
+                    <option>Acre</option>
                   </select>
                 </div>
-              </form>
-              <div class="row mt-4 align-items-center">
-                <div class="col">
-                  <a
-                    href="inscricao.html"
-                    class="btn btn-primary btn-lg btn-block"
-                    >Comprar Plano</a
-                  >
-                </div>
-                <div class="col">
-                  <span class="h4">R$5.000</span>
+                <div class="form-group col-sm-3">
+                  <label for="cep">CEP</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="cep"
+                    placeholder="xxxxx-xxx"
+                  />
                 </div>
               </div>
-            </div>
+
+              <div class="bg-light rounded box-shadow p-3 form-group">
+                <h2 class="h6 text-primary">PLANO ESCOLHIDO</h2>
+                <nav class="nav mb-3" id="myTab" role="tablist">
+                  <button
+                    type="button"
+                    class="btn btn-secondary btn-sm"
+                    id="home-tab"
+                    data-toggle="tab"
+                    href="#home"
+                    role="tab"
+                    aria-controls="home"
+                    aria-selected="true"
+                  >
+                    Cartão de Crédito
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-secondary btn-sm"
+                    id="profile-tab"
+                    data-toggle="tab"
+                    href="#profile"
+                    role="tab"
+                    aria-controls="profile"
+                    aria-selected="false"
+                  >
+                    Boleto Bancário
+                  </button>
+                </nav>
+                <div class="tab-content" id="myTabContent">
+                  <div
+                    class="tab-pane fade show active"
+                    id="home"
+                    role="tabpanel"
+                    aria-labelledby="home-tab"
+                  >
+                    <div class="form-row">
+                      <div class="form-group col-sm-6">
+                        <label for="cardName">Nome no Cartão</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="cardName"
+                          placeholder="Nome impresso no cartão"
+                        />
+                      </div>
+                      <div class="form-group col-sm-3">
+                        <label for="mounth">Mês</label>
+                        <select id="mounth" class="form-control">
+                          <option selected>Expira mês...</option>
+                          <option>01</option>
+                          <option>02</option>
+                          <option>03</option>
+                          <option>04</option>
+                          <option>05</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-sm-3">
+                        <label for="year">Ano</label>
+                        <select id="year" class="form-control">
+                          <option selected>Expira ano...</option>
+                          <option>2017</option>
+                          <option>2018</option>
+                          <option>2019</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="cardName">Número do Cartão</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="cardName"
+                          placeholder="5555 5555 5555 5555"
+                        />
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="code">Código de Segurança</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="code"
+                          placeholder="XXX"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="profile"
+                    role="tabpanel"
+                    aria-labelledby="profile-tab"
+                  >
+                    <p class="lead">
+                      Clique em contratar plano que enviaremos um boleto para o
+                      seu e-mail.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="form-check mb-2">
+                <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input" />
+                  Concordo com os <a href="#">Termos e Condições</a>.
+                </label>
+              </div>
+              <button type="submit" class="btn btn-primary btn-lg">
+                Contratar Plano
+              </button>
+            </form>
           </div>
-          <div class="col-md mb-4">
+
+          <div class="col-lg-5 mx-auto order-first order-lg-1 mb-5">
+            <h2 class="h6 text-primary">PLANO ESCOLHIDO</h2>
             <div class="bg-light rounded p-4 shadow-sm">
-              <h2>Platinum <span class="badge badge-success">Novo</span></h2>
+              <h2>
+                <span id="planName">Platinum</span>
+                <span class="badge badge-success" id="badge">Novo</span>
+              </h2>
               <ul class="lista-plano list-unstyled">
-                <li>→ 60 dias de viagem</li>
-                <li>→ 6 destinos diferentes</li>
+                <li>→ <span id="days">60</span> dias de viagem</li>
+                <li>→ <span id="destinations">6</span> destinos diferentes</li>
                 <li>→ Tudo pago pela empresa</li>
                 <li>→ Ingressos para festas</li>
               </ul>
@@ -141,7 +301,7 @@
                   >
                 </div>
                 <div class="col">
-                  <span class="h4">R$7.500</span>
+                  <span class="h4" id="price">R$7.500</span>
                 </div>
               </div>
             </div>
