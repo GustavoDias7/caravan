@@ -24,3 +24,4 @@ function setInfoPlans() {
     badgePlan.classList.add("d-none");
   }
 }
+setInfoPlans();
